@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Protest+Riot&family=Rakkas&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Alfa Slab One", serif;
+  font-weight: 400;
+  background-color: #f4f4f4;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+#branding {
+  letter-spacing: 1px;
+}
+main > section {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+#header {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #353637;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border-bottom: 3px solid #32a0c2;
+  min-height: 10svh;
+  padding: 0px 25px;
+}
+#header a {
+  color: #b1afaf;
+  text-decoration: none;
+}
+#branding h1 {
+  font-size: 28px;
+}
+nav ul {
+  margin-top: 0;
+  list-style-type: none;
+}
+nav ul li {
+  float: left;
+  margin-left: 15px;
+  font-size: 24px;
+}
+#header .current a,
+#header .studentName {
+  color: #32a0c2;
+}
+.studentName {
+  margin-right: 12px;
+  margin-left: 12px;
+  color: #32a0c2;
+}
+.current {
+  border-bottom: 3px solid #32a0c2;
+  color: #32a0c2;
+}
+#showcase {
+  background-image: url("../Images/image.jpg");
+  min-height: 80svh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #32acd1;
+  font-size: 30px;
+}
+#showcase h1 {
+  display: flex;
+  flex-direction: column;
+}
+#showcase .studentName {
+  font-size: 50px;
+  margin-block: 55px;
+}
+
+.Job {
+  color: #babcbd;
+  margin-bottom: 30px;
+  font-size: 40px;
+  background-color: rgba(128, 173, 187, 0.8);
+  padding: 12px 12px;
+  border-radius: 30px;
+  letter-spacing: 0.1rem;
+}
+#showcase p {
+  margin-top: 30px;
+  max-width: 800px;
+  color: #ffffff;
+}
+#newsletter {
+  padding: 0px 50px;
+  min-height: 10svh;
+  color: #ffffffff;
+  background-color: #353637;
+  letter-spacing: 3px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+#newsletter h1 {
+  float: left;
+}
+#newsletter form {
+  float: right;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 15px;
+}
+#newsletter input[type="email"] {
+  padding: 10px 50px;
+  background-color: #32a0c2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5vw;
+  outline: none;
+  color: #353637;
+  font-size: 24px;
+  border: 3px solid #ff6028;
+}
+#newsletter input[type="email"]::placeholder {
+  font-weight: 800;
+  padding-left: 35%;
+}
+#newsletter button {
+  padding: 10px 20px;
+  background-color: #92cadb;
+  border-radius: 5vw;
+  margin-right: 20px;
+  margin-left: 20px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  transition: all 0.5s;
+}
+#newsletter button:hover{
+  background-color: #ff6028;
+  color: #92cadb;
+}
+#boxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-flow: row wrap;
+  align-content: center;
+  padding: 60px 60px;
+  background-color: #babcbd;
+  color: #353637;
+}
+.box {
+  flex: 30%;
+}
+@media screen and (max-width: 1020px) {
+  #boxes {
+    flex-direction: column;
+  }
+}
+#footer {
+  background-color: #32a0c2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 5vh;
+  padding: 0px 20px;
+height: 10vh;}
